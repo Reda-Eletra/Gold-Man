@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/mainStyles.css" />
+		<title>Gold Man</title>
+	</head>
+	<body>
+		<header>
+			<h1>Gold Man</h1>
+			<nav>
+				<ul>
+					<li><a href="#main">Home</a></li>
+					<li><a href="#haircuts">Haircuts</a></li>
+					<li><a href="#callus">Call Us</a></li>
+					<li><a target="_blank" href="./login.html">login</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="main" class="main">
+			<h2>Welcome to Gold Man</h2>
+			<a href="#booking" class="btn">Book an Appointment Now</a>
+		</section>
+		<section id="haircuts" class="haircuts">
+			<h2>Choose the Haircut That Suits You</h2>
+			<div>
+				<div class="haircut">
+					<h3>Haircut</h3>
+					<img src="./images/1.jpg" alt=" Haircut" />
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nobis!</p>
+				</div>
+				<div class="haircut">
+					<h3>Haircut</h3>
+					<img src="./images/2.jpg" alt=" Haircut" />
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nobis!</p>
+				</div>
+				<div class="haircut">
+					<h3>Haircut</h3>
+					<img src="./images/3.jpg" alt=" Haircut" />
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nobis!</p>
+				</div>
+				<div class="haircut">
+					<h3>Haircut</h3>
+					<img src="./images/4.jpg" alt=" Haircut" />
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nobis!</p>
+				</div>
+			</div>
+		</section>
+		<section id="booking" class="booking">
+			<div class="container">
+				<div class="booking-content">
+					<div class="booking-form">
+						<h1>Book an Appointment</h1>
+						<form id="booking-form">
+							<div>
+								<label for="yourname">Your Name</label>
+								<input type="text" id="yourname" name="yourname" required />
+							</div>
+							<div>
+								<label for="date">Select Date:</label>
+								<input type="date" id="date" name="date" required />
+							</div>
+							<div>
+								<label for="time">Select Time:</label>
+								<input type="time" id="time" name="time" required />
+							</div>
+							<div>
+								<label for="barber">Select Barber:</label>
+								<select id="barber" name="barber" required>
+									<option>Barber 1</option>
+									<option>Barber 2</option>
+									<option>Barber 3</option>
+								</select>
+							</div>
+							<div>
+								<label for="service">Select Service:</label>
+								<select id="service" name="service" required>
+									<option>Short Haircut</option>
+									<option>Long Haircut</option>
+								</select>
+							</div>
+							<button type="submit" id="add-booking">Book Appointment</button>
+						</form>
+					</div>
+					<div class="booking-image">
+						<img src="./images//background/form.jpg" alt="Haircut Image" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="bookings" class="bookings">
+			<div class="container">
+				<h2>Booking Details</h2>
+				<div id="bookings-table">
+					<table>
+						<thead>
+							<tr>
+								<th>Date & Time</th>
+								<th>Barber</th>
+								<th>Service</th>
+								<th>Client Name</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

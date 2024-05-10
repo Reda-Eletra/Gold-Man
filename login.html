@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login Page</title>
+		<link rel="stylesheet" href="./css/login.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Login</h1>
+			<div class="mm">
+				<div class="loginImage">
+					<img src="./images//background/form.jpg" alt="Haircut Image" />
+				</div>
+				<form id="login-form">
+					<div class="form-group">
+						<label for="first-name">First Name:</label>
+						<input
+							type="text"
+							id="first-name"
+							name="first-name"
+							required
+							pattern="[A-Za-z]{2,}"
+							title="First name must contain at least 2 characters and only letters"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="last-name">Last Name:</label>
+						<input
+							type="text"
+							id="last-name"
+							name="last-name"
+							required
+							pattern="[A-Za-z]{2,}"
+							title="Last name must contain at least 2 characters and only letters"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required />
+					</div>
+					<div class="form-group">
+						<label for="username">Username:</label>
+						<input
+							type="text"
+							id="username"
+							name="username"
+							required
+							pattern="[a-zA-Z0-9_]{4,}"
+							title="Username must contain at least 4 characters and only alphanumeric characters and underscores"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="password">Password:</label>
+						<input
+							type="password"
+							id="password"
+							name="password"
+							required
+							pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+							title="Password must contain at least one number, one lowercase and one uppercase letter, and at least 8 or more characters"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="confirm-password">Confirm Password:</label>
+						<input type="password" id="confirm-password" name="confirm-password" required />
+					</div>
+					<button type="submit">Login</button>
+				</form>
+			</div>
+		</div>
+		<script src="login.js"></script>
+	</body>
+</html>

@@ -1,0 +1,264 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+}
+
+header {
+	background-color: #000000;
+
+	padding: 20px 0;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+header h1 {
+	font-size: 2rem;
+	margin: 0;
+	color: #fff;
+	text-align: center;
+}
+
+nav {
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	display: inline-block;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2rem;
+	transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+	color: #ddd;
+}
+
+.main {
+	text-align: center;
+	padding: 100px 0;
+	height: 100vh;
+	z-index: -1;
+	background-size: cover;
+	background-position: center;
+	animation: changeBackground 10s infinite;
+}
+
+@keyframes changeBackground {
+	0% {
+		background-image: url("../images/background/1.jpg");
+	}
+	25% {
+		background-image: url("../images/background/2.jpg");
+	}
+	75% {
+		background-image: url("../images/background/3.jpg");
+	}
+	100% {
+		background-image: url("../images/background/1.jpg");
+	}
+}
+
+.main h2 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+.btn {
+	display: inline-block;
+	background-color: #000000;
+	color: #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+	border: none;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #0a0303;
+}
+
+.haircuts {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+}
+
+.haircuts h2 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.haircuts > div {
+	margin: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.haircut img {
+	width: 100%;
+	max-width: 300px;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.haircut h3 {
+	font-size: 2rem;
+	margin-top: 20px;
+	color: #333;
+}
+
+.haircut p {
+	font-size: 1.2rem;
+	margin-top: 10px;
+	color: #666;
+}
+
+.booking {
+	text-align: center;
+	padding: 100px 0;
+	background-color: #f9f9f9;
+}
+.booking form {
+	display: flex;
+	flex-direction: column;
+}
+.booking form > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.booking-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.booking-form {
+	flex: 1;
+	text-align: left;
+	padding-right: 20px;
+}
+
+.booking-image {
+	flex: 1;
+}
+
+.booking-image img {
+	border-radius: 10%;
+	width: 500px;
+}
+
+.booking h1 {
+	font-size: 3rem;
+	margin-bottom: 30px;
+}
+
+.booking label {
+	display: block;
+	font-size: 1.2rem;
+	color: #333;
+}
+
+.booking input,
+.booking select,
+.booking button {
+	width: 70%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.booking button {
+	background-color: #dece1e;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 10px 20px;
+	cursor: pointer;
+	align-self: center;
+	width: 50%;
+	transition: background-color 0.3s ease;
+}
+
+.booking button:hover {
+	background-color: #0a0303;
+}
+
+#bookings {
+	text-align: center;
+	padding: 100px 0;
+	background-color: #f4f4f4;
+}
+
+#bookings .container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+#bookings h2 {
+	font-size: 3rem;
+	margin-bottom: 30px;
+	color: #333;
+}
+
+#bookings-table {
+	margin-top: 30px;
+	overflow-x: auto;
+}
+
+#bookings-table table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 2px solid #333;
+}
+
+#bookings-table th,
+#bookings-table td {
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+#bookings-table th {
+	background-color: #ca721f;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#bookings-table tbody tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+#bookings-table tbody tr:hover {
+	background-color: #ddd;
+}
