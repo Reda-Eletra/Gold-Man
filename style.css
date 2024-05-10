@@ -1,0 +1,188 @@
+/* styles.css */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #947342;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #160202;
+}
+
+.hero {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    display: inline-block;
+    background: #7c7959;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0a0303;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* home1.css */
+.haircuts {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.haircut {
+    margin-bottom: 2rem;
+}
+
+.haircut img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.haircut h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.haircut p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* home2.css */
+.booking {
+    text-align: center;
+}
+
+.booking .container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.booking h1 {
+    margin-bottom: 2rem;
+}
+
+.booking form {
+    margin-bottom: 2rem;
+}
+
+.booking label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.booking input,
+.booking select,
+.booking button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.booking button {
+    background-color: #7c7959;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.booking button:hover {
+    background-color: #0a0303;
+}
+form {
+    margin-top: 20px;
+  }
+  
+  form label, form select, form input[type="date"], form input[type="time"], form button {
+    margin: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: rgb(24, 2, 2);
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #be722b;
+  }
+  
+  #bookings-table {
+    margin-top: 50px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #000000;
+  }
+  
+  th, td {
+    padding: 10px;
+  }
+  
+  th {
+    background-color: #ca721f;
+    color: rgb(247, 239, 239);
+  }

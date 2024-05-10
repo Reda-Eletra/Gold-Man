@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صالون حلاقة رجالي</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="home1.css">
+    <link rel="stylesheet" href="home2.css"> -->
+</head>
+<body>
+    <!-- الرأس -->
+    <header>
+        <h1>Gold Man</h1>
+        <nav>
+            <ul>
+                <li><a href="#main">الرئيسية</a></li>
+                <!-- <li><a href="home1.html">قصات الشعر</a></li> -->
+                <li><a href="#haircuts">قصات الشعر</a></li>
+
+                <!-- <li><a href="#offers">العروض</a></li> -->
+                <li><a href="#callus">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قسم البطولة -->
+    <section class="hero">
+        <h2>Welcome to Gold Man</h2>
+        <a href="#booking" class="btn">احجز موعدًا الآن</a>
+    </section>
+    
+    <!-- قسم قصات الشعر -->
+    <section id="haircuts" class="haircuts">
+        <h2>اختر قصة الشعر التي تناسبك</h2>
+        <div class="haircut">
+            <h3>قصة الشعر القصيرة</h3>
+            <img src="../images/قصير.jpg" alt="قصة الشعر 1">
+            <img src="../images/rwdv 1.jpg" alt="قصة الشعر 1">
+            <p>قصة شعر قصيرة رائعة تناسب جميع الأعمار والأذواق</p>
+        </div>
+        <div class="haircut">
+            <h3>قصة الشعر الطويلة</h3>
+            <img src="../images/طويل.jpg" alt="قصة الشعر 2">
+            <p>استمتع بإطلالة شعر طويلة وجذابة مع هذه القصة المميزة</p>
+        </div>
+        <div class="haircut">
+            <h3>قصة الشعر الكيرلي</h3>
+            <img src="../images/كيرلي.jpg" alt="قصة الشعر 3">
+            <p>قصة الكيرلي المحببة للشباب</p>
+        </div>
+        <div class="haircut">
+            <h3>قصة الشعر الويفي</h3>
+            <img src="../images/ويفي.jpg" alt="قصة الشعر 4">
+            <p>قصة الويفي حديثة ومناسبة للشباب</p>
+        </div>
+    </section>
+
+
+    <!-- قسم حجز المواعيد -->
+    <section id="booking"  class="booking">
+        <div class="container">
+            <h1>احجز موعدًا الآن للحلاقة</h1>
+            <form id="booking-form">
+                <label for="yourname">اسم العميل</label>
+                <input type="text" id="yourname" name="yourname" required>
+                <label for="date">اختر التاريخ:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">اختر الوقت:</label>
+                <input type="time" id="time" name="time" required>
+                <label for="barber">اختر الحلاق:</label>
+                <select id="barber" name="barber" required>
+                    <option>حلاق 1</option>
+                    <option>حلاق 2</option>
+                    <option>حلاق 3</option>
+                </select>
+                <label for="service">اختر نوع الخدمة:</label>
+                <select id="service" name="service" required>
+                    <option>قصة شعر قصيرة</option> 
+                    <option>قصة شعر طويلة</option> 
+                    <option>قصة شعر كيرلي</option> 
+                    <option>قصة شعر ويفي</option>      
+                    <option>تلوين الشعر</option>
+                    <option>حلاقة اللحية</option>
+                </select>
+                <button type="button" id="add-booking">حجز الموعد</button>
+            </form>
+            <div id="bookings-table">
+                <h2>جدول الحجوزات</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>التاريخ والوقت</th>
+                            <th>اسم الحلاق </th>
+                            <th>نوع الخدمة</th>
+                            <th>اسم العميل</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- سيتم ملء هذا الجدول بشكل ديناميكي باستخدام JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2024</p>
+    </footer>
+
+    <!-- روابط النصوص النصية -->
+    <!-- <script src="script.js"></script> -->
+    <script src="main.js"></script>
+</body>
+</html>
